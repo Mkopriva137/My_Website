@@ -79,6 +79,9 @@
       #about-me i{
         font-size: 30px;
       }
+      a:hover{
+        color: aliceblue;
+      }
 
     </style>
 
@@ -91,12 +94,28 @@
           </ul>
         </div>
         
+  <div class="modal fade" id="contactmodal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="model-title">Contact Information</h2>
+            <div class="modal-body">
+              <p>Phone Number:<br> (717)-592-9150</p>
+              <p>E-mail: mkopriva137@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!---end modal-->
+
+
     <div class="header-tabs">
       <ul class="list-unstyled">
         <li class="list-inline-item">Home</li>
         <li class="list-inline-item">About</li>
         <li class="list-inline-item">Resume</li>
-        <li class="list-inline-item">Contact</li>
+        <li class="list-inline-item" id="contact"><a href="#" data-toggle="modal" 
+          data-target="#contactmodal">Contact</a></li>
         <li class="list-inline-item">Extras</li>
       </ul>
     </div>
@@ -119,10 +138,8 @@
 </div>
   <section id="about-me">
     <div class="container">
-      <div class="text-center">
-        <i class="fas fa-fingerprint"></i><br>
-      </div>
-      <p class="text-center">About Me</p>
+      <p class="text-center">About Me<br><i class="fas fa-fingerprint"></i></p>
+      
     </div>
   </section>
 
