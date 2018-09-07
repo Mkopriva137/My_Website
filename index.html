@@ -8,6 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
+
+
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
     <title>My Website</title>
   </head>
   <body>
@@ -64,15 +72,18 @@
         color: aliceblue;
 
       }
-      .about-me{
-        font-size: 50px;
-        margin-top: -50px;
+      #about-me{
+        font-size: 40px;
+        margin-top: -60px;
+      }
+      #about-me i{
+        font-size: 30px;
       }
 
     </style>
 
   <div class="container-fluid">
-      <div class="media">
+      <div class="media wow bounce animated" data-wow-delay="1s" data-wow-duration="1s">
           <ul>
             <li><a href="https://github.com/Mkopriva137"><i class="fab fa-github-square" ></i></a></li>
             <li><a href="https://www.linkedin.com/in/michael-kopriva"><i class="fab fa-linkedin"></i></a></li>
@@ -83,29 +94,35 @@
     <div class="header-tabs">
       <ul class="list-unstyled">
         <li class="list-inline-item">Home</li>
-        <li class="list-inline-item">About Me</li>
+        <li class="list-inline-item">About</li>
         <li class="list-inline-item">Resume</li>
+        <li class="list-inline-item">Contact</li>
+        <li class="list-inline-item">Extras</li>
       </ul>
     </div>
 
   <section>
-    <div class="container">
+    <div class="container fadeIn animated">
+
       <div id="line1"><h1>I am</h1></div><br>
+      <div class="name wow fadeIn animated" data-wow-delay="1s" data-wow-duration="1s">
       <div id="line2"><h1>Michael Kopriva</h1></div>
     </div>
-    <div class="date text-right">
+    </div>
+    <!-- <div class="date text-right">
         <script type="text/javascript">
-          document.write(Date("MM-DD-YYYY"));
-        </script>
+          document.write(Date("January-01-2019"));
+        </script> -->
       </div>
   </section>
 
 </div>
-  <section>
+  <section id="about-me">
     <div class="container">
-      <div class="about-me">
+      <div class="text-center">
+        <i class="fas fa-fingerprint"></i><br>
+      </div>
       <p class="text-center">About Me</p>
-    </div>
     </div>
   </section>
 
